@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sign up </title>
+        <script type="text/javascript">
+        
+ function check() 
+ {
+ if (account.value=="")
+   {    document.getElementById("exist").innerHTML = "";
+       document.getElementById("acct").innerHTML="This field is required!";return false;}
+
+ if (userName.value==""){
+     document.getElementById("nameInfo").innerHTML="This field is required!";return false;
+ }
+ else {
+     document.getElementById("nameInfo").innerHTML="";
+ }
+ if (password.value=="")
+ {document.getElementById("pwd").innerHTML="This field is required!";return false;}
+ else if (password.value.length<6){
+	 document.getElementById("pwd").innerHTML="The length should be longer than 6!";return false;
+ }
+ else 
+ {if(password.value.match(/^[a-zA-Z]+\d+$/)) 
+ {document.getElementById("pwd").innerHTML="";
+ }
+ else 
+ {document.getElementById("pwd").innerHTML="This field is not valid";return false;}
+ if (passwordagain.value=="")
+ {document.getElementById("pwdagain").innerHTML="This field is required!";return false;}
+ else{
+     if (passwordagain.value == password.value)
+     {document.getElementById("pwdagain").innerHTML="";}else{
+         {document.getElementById("pwdagain").innerHTML="The passwords do not match";return false;}
+     }
+ }
+ }   
+}
+   function checkExist(username)  {
+       document.getElementById("acct").innerHTML="";
+   		if(window.XMLHttpRequest){
+   			xmlhttp = new XMLHttpRequest();
+   		}
+   		else{
+   			xmlhttp = new ActiveXObject("MIcrosoft.XMLHTTP");
+   		}
+   		xmlhttp.onreadystatechange = function(){
+   			if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+   		       document.getElementById("exist").innerHTML = xmlhttp.responseText;
+   			}
+   		}
+   		xmlhttp.open("GET","checkExist.php?v="+username,true);
+   		xmlhttp.send();
+   		
+   }
+ 
+ </script>
+
+    </head>
+    <body>
+ <form method="post" action="signup.php" onsubmit="return check(this)">
+	<p> Username: <input type="text" onkeyup = "checkExist(this.value)" name="account" id="account" placeholder="abc123/ABC123"/> 
+	 <i><span id="acct" span style="color:red"></span><span id="exist" span style="color:red"></span></i>
+	 </p> <br />
+     <p> Name: <input type="text" name="userName" id="userName" /> 
+     <i><span id="nameInfo" span style="color:red"></span></i></p>
+	<p> Password: <input type="password" name="password" id="password" placeholder="abc123/ABC123"/>
+	 <i><span id="pwd" span style="color:red"></span></i>
+	 <p> Password Again: <input type="password" name="passwordagain" id="passwordagain" placeholder="abc123/ABC123"/>
+	 <i><span id="pwdagain" span style="color:red"></span></i>
+	</p> <br />
+	<p> <input type="submit" value="sign in" name="sign in" onclick="check()"/>        
+	</p>
+   </form>
+    </body>
+</html>

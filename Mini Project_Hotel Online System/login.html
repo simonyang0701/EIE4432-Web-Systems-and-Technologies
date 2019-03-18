@@ -1,0 +1,53 @@
+<?php session_start();
+session_destory(); ?>
+<html>   <head> <title> Login Page </title> 
+<script type="text/javascript">
+ function check(f) 
+ {
+ if (username.value=="")
+   {document.getElementById("name").innerHTML="This field is required!";return false;}
+   else if(username.value.length<6){
+     document.getElementById("name").innerHTML="The length of username should be longer than 6.";return false;
+   }
+ else 
+ {   if(username.value.match(/^[a-zA-Z]+\d+$/)) 
+    {   document.getElementById("name").innerHTML="";
+    }
+         else 
+        {document.getElementById("name").innerHTML="This field is not valid";return false;}
+        }
+   if (password.value=="")
+ {document.getElementById("pwd").innerHTML="This field is required!";return false;}
+ else if(password.value.length<6){
+   document.getElementById("pwd").innerHTML="The length of username should be longer than 6.";return false;
+ }
+ else 
+ {if(password.value.match(/^[a-zA-Z]+\d+$/)) 
+ {document.getElementById("pwd").innerHTML="";
+ }
+ else 
+ {document.getElementById("pwd").innerHTML="This field is not valid";return false;}
+ }   
+}
+ 
+ </script>
+
+
+
+
+</head>
+<body>
+   <form method="post" action="verifyLogin.php" onsubmit="return check(this)">
+	<p> Username: <input type="text" name="username" id="username" placeholder="abc123/ABC123"/> 
+	 <i><span id="name" span style="color:red"></span></i>
+	 </p> <br />
+	<p> Password: <input type="password" name="password" id="password" placeholder="abc123/ABC123">
+	 <i><span id="pwd" span style="color:red"></span></i>
+	</p> <br />
+	<p> <input type="submit" value="sign in" name="sign in" onclick="check()"/>        
+	</p>
+   </form>
+  <form action="signup.html">
+   <p> <input type="submit" value="sign up" name="sign up"/>
+   </form>
+</body>  </html>

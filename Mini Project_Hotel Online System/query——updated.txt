@@ -1,0 +1,1631 @@
+drop database if exists Hostmanagement;create database Hostmanagement;use Hostmanagement;
+    create table `User` (
+    `userID` int(20) NOT NULL,
+    `name` varchar(20),
+    `account` varchar(20) NOT NULL,
+    `password` varchar(30) NOT NULL,
+    `authority` varchar(20) NOT NULL,
+     PRIMARY KEY (`userID`)
+    );
+INSERT INTO `User` VALUES (0,'MARY','MARY953','MARY6187','user');
+INSERT INTO `User` VALUES (1,'PATRICIA','PATRICIA523','PATRICIA8446','user');
+INSERT INTO `User` VALUES (2,'LINDA','LINDA208','LINDA7566','user');
+INSERT INTO `User` VALUES (3,'BARBARA','BARBARA329','BARBARA1180','user');
+INSERT INTO `User` VALUES (4,'ELIZABETH','ELIZABETH16','ELIZABETH5847','user');
+INSERT INTO `User` VALUES (5,'JENNIFER','JENNIFER421','JENNIFER6073','user');
+INSERT INTO `User` VALUES (6,'MARIA','MARIA752','MARIA1175','user');
+INSERT INTO `User` VALUES (7,'SUSAN','SUSAN304','SUSAN5330','user');
+INSERT INTO `User` VALUES (8,'MARGARET','MARGARET356','MARGARET8931','user');
+INSERT INTO `User` VALUES (9,'DOROTHY','DOROTHY803','DOROTHY9414','user');
+INSERT INTO `User` VALUES (10,'LISA','LISA847','LISA3627','user');
+INSERT INTO `User` VALUES (11,'NANCY','NANCY147','NANCY9050','user');
+INSERT INTO `User` VALUES (12,'KAREN','KAREN463','KAREN8357','user');
+INSERT INTO `User` VALUES (13,'BETTY','BETTY840','BETTY1614','user');
+INSERT INTO `User` VALUES (14,'HELEN','HELEN35','HELEN7396','user');
+INSERT INTO `User` VALUES (15,'SANDRA','SANDRA511','SANDRA9876','user');
+INSERT INTO `User` VALUES (16,'DONNA','DONNA358','DONNA342','user');
+INSERT INTO `User` VALUES (17,'CAROL','CAROL832','CAROL5667','user');
+INSERT INTO `User` VALUES (18,'RUTH','RUTH791','RUTH1612','user');
+INSERT INTO `User` VALUES (19,'SHARON','SHARON685','SHARON8069','user');
+INSERT INTO `User` VALUES (20,'MICHELLE','MICHELLE746','MICHELLE1057','user');
+INSERT INTO `User` VALUES (21,'LAURA','LAURA414','LAURA4974','user');
+INSERT INTO `User` VALUES (22,'SARAH','SARAH223','SARAH7185','user');
+INSERT INTO `User` VALUES (23,'KIMBERLY','KIMBERLY30','KIMBERLY5789','user');
+INSERT INTO `User` VALUES (24,'DEBORAH','DEBORAH612','DEBORAH8335','user');
+INSERT INTO `User` VALUES (25,'JESSICA','JESSICA520','JESSICA4583','user');
+INSERT INTO `User` VALUES (26,'SHIRLEY','SHIRLEY196','SHIRLEY6676','user');
+INSERT INTO `User` VALUES (27,'CYNTHIA','CYNTHIA363','CYNTHIA6593','user');
+INSERT INTO `User` VALUES (28,'ANGELA','ANGELA503','ANGELA2027','user');
+INSERT INTO `User` VALUES (29,'MELISSA','MELISSA821','MELISSA5383','user');
+INSERT INTO `User` VALUES (30,'BRENDA','BRENDA943','BRENDA3317','user');
+INSERT INTO `User` VALUES (31,'AMY','AMY526','AMY3006','user');
+INSERT INTO `User` VALUES (32,'ANNA','ANNA366','ANNA3580','user');
+INSERT INTO `User` VALUES (33,'REBECCA','REBECCA868','REBECCA1568','user');
+INSERT INTO `User` VALUES (34,'VIRGINIA','VIRGINIA519','VIRGINIA5522','user');
+INSERT INTO `User` VALUES (35,'KATHLEEN','KATHLEEN964','KATHLEEN2651','user');
+INSERT INTO `User` VALUES (36,'PAMELA','PAMELA658','PAMELA3779','user');
+INSERT INTO `User` VALUES (37,'MARTHA','MARTHA763','MARTHA8811','user');
+INSERT INTO `User` VALUES (38,'DEBRA','DEBRA96','DEBRA7929','user');
+INSERT INTO `User` VALUES (39,'AMANDA','AMANDA460','AMANDA7080','user');
+INSERT INTO `User` VALUES (40,'STEPHANIE','STEPHANIE626','STEPHANIE9802','user');
+INSERT INTO `User` VALUES (41,'CAROLYN','CAROLYN166','CAROLYN8226','user');
+INSERT INTO `User` VALUES (42,'CHRISTINE','CHRISTINE648','CHRISTINE5295','user');
+INSERT INTO `User` VALUES (43,'MARIE','MARIE482','MARIE1510','user');
+INSERT INTO `User` VALUES (44,'JANET','JANET732','JANET3026','user');
+INSERT INTO `User` VALUES (45,'CATHERINE','CATHERINE690','CATHERINE6746','user');
+INSERT INTO `User` VALUES (46,'FRANCES','FRANCES635','FRANCES2152','user');
+INSERT INTO `User` VALUES (47,'ANN','ANN976','ANN3','user');
+INSERT INTO `User` VALUES (48,'JOYCE','JOYCE573','JOYCE8427','user');
+INSERT INTO `User` VALUES (49,'DIANE','DIANE157','DIANE924','user');
+INSERT INTO `User` VALUES (50,'ALICE','ALICE395','ALICE1209','user');
+INSERT INTO `User` VALUES (51,'JULIE','JULIE357','JULIE526','user');
+INSERT INTO `User` VALUES (52,'HEATHER','HEATHER499','HEATHER1200','user');
+INSERT INTO `User` VALUES (53,'TERESA','TERESA934','TERESA5954','user');
+INSERT INTO `User` VALUES (54,'DORIS','DORIS913','DORIS3936','user');
+INSERT INTO `User` VALUES (55,'GLORIA','GLORIA303','GLORIA5393','user');
+INSERT INTO `User` VALUES (56,'EVELYN','EVELYN374','EVELYN4695','user');
+INSERT INTO `User` VALUES (57,'JEAN','JEAN362','JEAN216','user');
+INSERT INTO `User` VALUES (58,'CHERYL','CHERYL999','CHERYL8437','user');
+INSERT INTO `User` VALUES (59,'MILDRED','MILDRED172','MILDRED7313','user');
+INSERT INTO `User` VALUES (60,'KATHERINE','KATHERINE146','KATHERINE8621','user');
+INSERT INTO `User` VALUES (61,'JOAN','JOAN406','JOAN7808','user');
+INSERT INTO `User` VALUES (62,'ASHLEY','ASHLEY77','ASHLEY3811','user');
+INSERT INTO `User` VALUES (63,'JUDITH','JUDITH781','JUDITH6505','user');
+INSERT INTO `User` VALUES (64,'ROSE','ROSE224','ROSE9384','user');
+INSERT INTO `User` VALUES (65,'JANICE','JANICE743','JANICE6186','user');
+INSERT INTO `User` VALUES (66,'KELLY','KELLY59','KELLY1004','user');
+INSERT INTO `User` VALUES (67,'NICOLE','NICOLE671','NICOLE5582','user');
+INSERT INTO `User` VALUES (68,'JUDY','JUDY220','JUDY6050','user');
+INSERT INTO `User` VALUES (69,'CHRISTINA','CHRISTINA153','CHRISTINA1334','user');
+INSERT INTO `User` VALUES (70,'KATHY','KATHY999','KATHY4568','user');
+INSERT INTO `User` VALUES (71,'THERESA','THERESA673','THERESA3724','user');
+INSERT INTO `User` VALUES (72,'BEVERLY','BEVERLY927','BEVERLY345','user');
+INSERT INTO `User` VALUES (73,'DENISE','DENISE394','DENISE9253','user');
+INSERT INTO `User` VALUES (74,'TAMMY','TAMMY879','TAMMY5667','user');
+INSERT INTO `User` VALUES (75,'IRENE','IRENE657','IRENE245','user');
+INSERT INTO `User` VALUES (76,'JANE','JANE429','JANE623','user');
+INSERT INTO `User` VALUES (77,'LORI','LORI806','LORI5060','user');
+INSERT INTO `User` VALUES (78,'RACHEL','RACHEL443','RACHEL5864','user');
+INSERT INTO `User` VALUES (79,'MARILYN','MARILYN156','MARILYN6673','user');
+INSERT INTO `User` VALUES (80,'ANDREA','ANDREA525','ANDREA8994','user');
+INSERT INTO `User` VALUES (81,'KATHRYN','KATHRYN286','KATHRYN5840','user');
+INSERT INTO `User` VALUES (82,'LOUISE','LOUISE1000','LOUISE9572','user');
+INSERT INTO `User` VALUES (83,'SARA','SARA142','SARA2203','user');
+INSERT INTO `User` VALUES (84,'ANNE','ANNE562','ANNE2957','user');
+INSERT INTO `User` VALUES (85,'JACQUELINE','JACQUELINE354','JACQUELINE5607','user');
+INSERT INTO `User` VALUES (86,'WANDA','WANDA753','WANDA265','user');
+INSERT INTO `User` VALUES (87,'BONNIE','BONNIE934','BONNIE6789','user');
+INSERT INTO `User` VALUES (88,'JULIA','JULIA61','JULIA3271','user');
+INSERT INTO `User` VALUES (89,'RUBY','RUBY604','RUBY9394','user');
+INSERT INTO `User` VALUES (90,'LOIS','LOIS894','LOIS2607','user');
+INSERT INTO `User` VALUES (91,'TINA','TINA964','TINA3225','user');
+INSERT INTO `User` VALUES (92,'PHYLLIS','PHYLLIS323','PHYLLIS7693','user');
+INSERT INTO `User` VALUES (93,'NORMA','NORMA829','NORMA7666','user');
+INSERT INTO `User` VALUES (94,'PAULA','PAULA356','PAULA9850','user');
+INSERT INTO `User` VALUES (95,'DIANA','DIANA434','DIANA8804','user');
+INSERT INTO `User` VALUES (96,'ANNIE','ANNIE885','ANNIE7198','user');
+INSERT INTO `User` VALUES (97,'LILLIAN','LILLIAN464','LILLIAN8842','user');
+INSERT INTO `User` VALUES (98,'EMILY','EMILY677','EMILY6066','user');
+INSERT INTO `User` VALUES (99,'ROBIN','ROBIN104','ROBIN2390','user');
+
+    create table `Hotel` (
+    `hotelID` int(20) NOT NULL,
+    `name` varchar(40),
+    `roomNumberType` int(10) NOT NULL,
+    `location` varchar(200) NOT NULL,
+     PRIMARY KEY (`hotelID`)
+    );
+INSERT INTO `Hotel` VALUES (0,'Hilton Worldwide
+',14,'22.3690690086,114.1129033024
+');
+INSERT INTO `Hotel` VALUES (1,'Hilton Hotels & Resorts
+',7,'22.3354165398,114.3832353800
+');
+INSERT INTO `Hotel` VALUES (2,'Howard Johnsons
+',12,'22.3070165000,114.1860775000
+');
+INSERT INTO `Hotel` VALUES (3,'Four Seasons Hotels and Resorts
+',10,'22.2957315272,114.1717315683
+');
+INSERT INTO `Hotel` VALUES (4,'Center Parcs
+',8,'22.3481700000,114.0614420000
+');
+INSERT INTO `Hotel` VALUES (5,'Hyatt
+',11,'22.3372757047,114.1996955222
+');
+INSERT INTO `Hotel` VALUES (6,'Starwood
+',6,'22.2786922564,114.1766022138
+');
+INSERT INTO `Hotel` VALUES (7,'Adams Mark
+',9,'22.2774632564,114.1802012138
+');
+INSERT INTO `Hotel` VALUES (8,'Bellagio
+',1,'22.4575828487,114.0041967009
+');
+INSERT INTO `Hotel` VALUES (9,'Best Western
+',15,'22.3000985272,114.1683295683
+');
+INSERT INTO `Hotel` VALUES (10,'Holiday Inn
+',8,'22.3031409405,114.1745979764
+');
+INSERT INTO `Hotel` VALUES (11,'Motel 6 
+',15,'22.3080691967,114.0438590751
+');
+INSERT INTO `Hotel` VALUES (12,'Fairmont Hotels and Resorts
+',3,'22.3300900751,114.1928286566
+');
+INSERT INTO `Hotel` VALUES (13,'Radisson Hotels
+',7,'22.2780938169,114.1702841818
+');
+INSERT INTO `Hotel` VALUES (14,'Sofitel
+',5,'22.2780938169,114.1702841818
+');
+INSERT INTO `Hotel` VALUES (15,'Days Inn
+',8,'22.2793716009,114.1881686542
+');
+INSERT INTO `Hotel` VALUES (16,'Mandarin Oriental Hotel Group
+',4,'22.2771712564,114.1807252138
+');
+INSERT INTO `Hotel` VALUES (17,'Carlson Companies
+',2,'22.2902511613,114.1941043372
+');
+INSERT INTO `Hotel` VALUES (18,'InterContinental Hotels Group
+',5,'22.2952665272,114.1729245683
+');
+INSERT INTO `Hotel` VALUES (19,'AccorHotels
+',9,'22.3120991433,114.2195836019
+');
+INSERT INTO `Hotel` VALUES (20,'Crowne Plaza ?
+',2,'22.3062567844,114.1724609140
+');
+INSERT INTO `Hotel` VALUES (21,'Drury Hotels 
+',11,'22.2988209579,114.1782186219
+');
+INSERT INTO `Hotel` VALUES (22,'Kimpton Hotels & Restaurants
+',7,'22.2842689970,114.1530806259
+');
+INSERT INTO `Hotel` VALUES (23,'Marriott International 
+',15,'22.3029877844,114.1696959140
+');
+INSERT INTO `Hotel` VALUES (24,'Sheraton Hotels and Resorts
+',7,'22.2820430894,114.1842998418
+');
+INSERT INTO `Hotel` VALUES (25,'InterContinental
+',14,'22.3240543351,114.1731060759
+');
+INSERT INTO `Hotel` VALUES (26,'The Peninsula Hotels
+',13,'22.3079537844,114.1720299140
+');
+INSERT INTO `Hotel` VALUES (27,'List of hotels? 
+',2,'22.2873780894,114.1921438418
+');
+INSERT INTO `Hotel` VALUES (28,'Dunes
+',8,'22.3014299579,114.1833716219
+');
+INSERT INTO `Hotel` VALUES (29,'RIU Hotels',15,'22.2951975272,114.1717275683
+');
+
+    create table `Room` (
+    `hotelID` int(20) NOT NULL,
+    `roomType` varchar(20) NOT NULL,
+    `totalNum` int(10),
+    `Price` int(10),
+     PRIMARY KEY (`hotelID`,`roomType`)
+    );
+INSERT INTO `Room` VALUES (0,'single room
+',30,136);
+INSERT INTO `Room` VALUES (0,'double room
+',30,243);
+INSERT INTO `Room` VALUES (0,'double double room
+',30,342);
+INSERT INTO `Room` VALUES (0,'twin room
+',30,415);
+INSERT INTO `Room` VALUES (0,'interconnecting rooms
+',30,508);
+INSERT INTO `Room` VALUES (0,'adjoining rooms
+',30,691);
+INSERT INTO `Room` VALUES (0,'holllywood twin room
+',30,789);
+INSERT INTO `Room` VALUES (0,'duplex
+',30,842);
+INSERT INTO `Room` VALUES (0,'cabana
+',30,945);
+INSERT INTO `Room` VALUES (0,'studio room
+',30,1095);
+INSERT INTO `Room` VALUES (0,'parlor
+',30,1135);
+INSERT INTO `Room` VALUES (0,'lanal
+',30,1294);
+INSERT INTO `Room` VALUES (0,'efficiency room
+',30,1391);
+INSERT INTO `Room` VALUES (0,'hospitality room
+',30,1455);
+INSERT INTO `Room` VALUES (1,'single room
+',30,139);
+INSERT INTO `Room` VALUES (1,'double room
+',30,218);
+INSERT INTO `Room` VALUES (1,'double double room
+',30,307);
+INSERT INTO `Room` VALUES (1,'twin room
+',30,461);
+INSERT INTO `Room` VALUES (1,'interconnecting rooms
+',30,528);
+INSERT INTO `Room` VALUES (1,'adjoining rooms
+',30,636);
+INSERT INTO `Room` VALUES (1,'holllywood twin room
+',30,718);
+INSERT INTO `Room` VALUES (2,'single room
+',30,137);
+INSERT INTO `Room` VALUES (2,'double room
+',30,208);
+INSERT INTO `Room` VALUES (2,'double double room
+',30,364);
+INSERT INTO `Room` VALUES (2,'twin room
+',30,435);
+INSERT INTO `Room` VALUES (2,'interconnecting rooms
+',30,553);
+INSERT INTO `Room` VALUES (2,'adjoining rooms
+',30,655);
+INSERT INTO `Room` VALUES (2,'holllywood twin room
+',30,720);
+INSERT INTO `Room` VALUES (2,'duplex
+',30,865);
+INSERT INTO `Room` VALUES (2,'cabana
+',30,907);
+INSERT INTO `Room` VALUES (2,'studio room
+',30,1017);
+INSERT INTO `Room` VALUES (2,'parlor
+',30,1100);
+INSERT INTO `Room` VALUES (2,'lanal
+',30,1251);
+INSERT INTO `Room` VALUES (3,'single room
+',30,159);
+INSERT INTO `Room` VALUES (3,'double room
+',30,216);
+INSERT INTO `Room` VALUES (3,'double double room
+',30,359);
+INSERT INTO `Room` VALUES (3,'twin room
+',30,450);
+INSERT INTO `Room` VALUES (3,'interconnecting rooms
+',30,505);
+INSERT INTO `Room` VALUES (3,'adjoining rooms
+',30,600);
+INSERT INTO `Room` VALUES (3,'holllywood twin room
+',30,795);
+INSERT INTO `Room` VALUES (3,'duplex
+',30,800);
+INSERT INTO `Room` VALUES (3,'cabana
+',30,936);
+INSERT INTO `Room` VALUES (3,'studio room
+',30,1089);
+INSERT INTO `Room` VALUES (4,'single room
+',30,191);
+INSERT INTO `Room` VALUES (4,'double room
+',30,292);
+INSERT INTO `Room` VALUES (4,'double double room
+',30,327);
+INSERT INTO `Room` VALUES (4,'twin room
+',30,408);
+INSERT INTO `Room` VALUES (4,'interconnecting rooms
+',30,599);
+INSERT INTO `Room` VALUES (4,'adjoining rooms
+',30,688);
+INSERT INTO `Room` VALUES (4,'holllywood twin room
+',30,737);
+INSERT INTO `Room` VALUES (4,'duplex
+',30,835);
+INSERT INTO `Room` VALUES (5,'single room
+',30,105);
+INSERT INTO `Room` VALUES (5,'double room
+',30,275);
+INSERT INTO `Room` VALUES (5,'double double room
+',30,344);
+INSERT INTO `Room` VALUES (5,'twin room
+',30,469);
+INSERT INTO `Room` VALUES (5,'interconnecting rooms
+',30,509);
+INSERT INTO `Room` VALUES (5,'adjoining rooms
+',30,697);
+INSERT INTO `Room` VALUES (5,'holllywood twin room
+',30,724);
+INSERT INTO `Room` VALUES (5,'duplex
+',30,830);
+INSERT INTO `Room` VALUES (5,'cabana
+',30,961);
+INSERT INTO `Room` VALUES (5,'studio room
+',30,1032);
+INSERT INTO `Room` VALUES (5,'parlor
+',30,1147);
+INSERT INTO `Room` VALUES (6,'single room
+',30,162);
+INSERT INTO `Room` VALUES (6,'double room
+',30,283);
+INSERT INTO `Room` VALUES (6,'double double room
+',30,306);
+INSERT INTO `Room` VALUES (6,'twin room
+',30,478);
+INSERT INTO `Room` VALUES (6,'interconnecting rooms
+',30,542);
+INSERT INTO `Room` VALUES (6,'adjoining rooms
+',30,656);
+INSERT INTO `Room` VALUES (7,'single room
+',30,183);
+INSERT INTO `Room` VALUES (7,'double room
+',30,242);
+INSERT INTO `Room` VALUES (7,'double double room
+',30,351);
+INSERT INTO `Room` VALUES (7,'twin room
+',30,484);
+INSERT INTO `Room` VALUES (7,'interconnecting rooms
+',30,579);
+INSERT INTO `Room` VALUES (7,'adjoining rooms
+',30,639);
+INSERT INTO `Room` VALUES (7,'holllywood twin room
+',30,774);
+INSERT INTO `Room` VALUES (7,'duplex
+',30,870);
+INSERT INTO `Room` VALUES (7,'cabana
+',30,967);
+INSERT INTO `Room` VALUES (8,'single room
+',30,183);
+INSERT INTO `Room` VALUES (9,'single room
+',30,169);
+INSERT INTO `Room` VALUES (9,'double room
+',30,255);
+INSERT INTO `Room` VALUES (9,'double double room
+',30,320);
+INSERT INTO `Room` VALUES (9,'twin room
+',30,403);
+INSERT INTO `Room` VALUES (9,'interconnecting rooms
+',30,560);
+INSERT INTO `Room` VALUES (9,'adjoining rooms
+',30,695);
+INSERT INTO `Room` VALUES (9,'holllywood twin room
+',30,747);
+INSERT INTO `Room` VALUES (9,'duplex
+',30,829);
+INSERT INTO `Room` VALUES (9,'cabana
+',30,904);
+INSERT INTO `Room` VALUES (9,'studio room
+',30,1044);
+INSERT INTO `Room` VALUES (9,'parlor
+',30,1153);
+INSERT INTO `Room` VALUES (9,'lanal
+',30,1234);
+INSERT INTO `Room` VALUES (9,'efficiency room
+',30,1305);
+INSERT INTO `Room` VALUES (9,'hospitality room
+',30,1486);
+INSERT INTO `Room` VALUES (9,'suite room
+',30,1582);
+INSERT INTO `Room` VALUES (10,'single room
+',30,167);
+INSERT INTO `Room` VALUES (10,'double room
+',30,268);
+INSERT INTO `Room` VALUES (10,'double double room
+',30,389);
+INSERT INTO `Room` VALUES (10,'twin room
+',30,445);
+INSERT INTO `Room` VALUES (10,'interconnecting rooms
+',30,510);
+INSERT INTO `Room` VALUES (10,'adjoining rooms
+',30,644);
+INSERT INTO `Room` VALUES (10,'holllywood twin room
+',30,727);
+INSERT INTO `Room` VALUES (10,'duplex
+',30,852);
+INSERT INTO `Room` VALUES (11,'single room
+',30,196);
+INSERT INTO `Room` VALUES (11,'double room
+',30,211);
+INSERT INTO `Room` VALUES (11,'double double room
+',30,330);
+INSERT INTO `Room` VALUES (11,'twin room
+',30,435);
+INSERT INTO `Room` VALUES (11,'interconnecting rooms
+',30,585);
+INSERT INTO `Room` VALUES (11,'adjoining rooms
+',30,600);
+INSERT INTO `Room` VALUES (11,'holllywood twin room
+',30,701);
+INSERT INTO `Room` VALUES (11,'duplex
+',30,868);
+INSERT INTO `Room` VALUES (11,'cabana
+',30,969);
+INSERT INTO `Room` VALUES (11,'studio room
+',30,1056);
+INSERT INTO `Room` VALUES (11,'parlor
+',30,1188);
+INSERT INTO `Room` VALUES (11,'lanal
+',30,1272);
+INSERT INTO `Room` VALUES (11,'efficiency room
+',30,1316);
+INSERT INTO `Room` VALUES (11,'hospitality room
+',30,1483);
+INSERT INTO `Room` VALUES (11,'suite room
+',30,1519);
+INSERT INTO `Room` VALUES (12,'single room
+',30,145);
+INSERT INTO `Room` VALUES (12,'double room
+',30,287);
+INSERT INTO `Room` VALUES (12,'double double room
+',30,364);
+INSERT INTO `Room` VALUES (13,'single room
+',30,199);
+INSERT INTO `Room` VALUES (13,'double room
+',30,221);
+INSERT INTO `Room` VALUES (13,'double double room
+',30,369);
+INSERT INTO `Room` VALUES (13,'twin room
+',30,485);
+INSERT INTO `Room` VALUES (13,'interconnecting rooms
+',30,503);
+INSERT INTO `Room` VALUES (13,'adjoining rooms
+',30,635);
+INSERT INTO `Room` VALUES (13,'holllywood twin room
+',30,753);
+INSERT INTO `Room` VALUES (14,'single room
+',30,192);
+INSERT INTO `Room` VALUES (14,'double room
+',30,281);
+INSERT INTO `Room` VALUES (14,'double double room
+',30,363);
+INSERT INTO `Room` VALUES (14,'twin room
+',30,436);
+INSERT INTO `Room` VALUES (14,'interconnecting rooms
+',30,508);
+INSERT INTO `Room` VALUES (15,'single room
+',30,114);
+INSERT INTO `Room` VALUES (15,'double room
+',30,231);
+INSERT INTO `Room` VALUES (15,'double double room
+',30,319);
+INSERT INTO `Room` VALUES (15,'twin room
+',30,445);
+INSERT INTO `Room` VALUES (15,'interconnecting rooms
+',30,566);
+INSERT INTO `Room` VALUES (15,'adjoining rooms
+',30,604);
+INSERT INTO `Room` VALUES (15,'holllywood twin room
+',30,745);
+INSERT INTO `Room` VALUES (15,'duplex
+',30,868);
+INSERT INTO `Room` VALUES (16,'single room
+',30,172);
+INSERT INTO `Room` VALUES (16,'double room
+',30,214);
+INSERT INTO `Room` VALUES (16,'double double room
+',30,323);
+INSERT INTO `Room` VALUES (16,'twin room
+',30,460);
+INSERT INTO `Room` VALUES (17,'single room
+',30,187);
+INSERT INTO `Room` VALUES (17,'double room
+',30,239);
+INSERT INTO `Room` VALUES (18,'single room
+',30,142);
+INSERT INTO `Room` VALUES (18,'double room
+',30,205);
+INSERT INTO `Room` VALUES (18,'double double room
+',30,385);
+INSERT INTO `Room` VALUES (18,'twin room
+',30,429);
+INSERT INTO `Room` VALUES (18,'interconnecting rooms
+',30,570);
+INSERT INTO `Room` VALUES (19,'single room
+',30,184);
+INSERT INTO `Room` VALUES (19,'double room
+',30,251);
+INSERT INTO `Room` VALUES (19,'double double room
+',30,338);
+INSERT INTO `Room` VALUES (19,'twin room
+',30,468);
+INSERT INTO `Room` VALUES (19,'interconnecting rooms
+',30,554);
+INSERT INTO `Room` VALUES (19,'adjoining rooms
+',30,674);
+INSERT INTO `Room` VALUES (19,'holllywood twin room
+',30,720);
+INSERT INTO `Room` VALUES (19,'duplex
+',30,846);
+INSERT INTO `Room` VALUES (19,'cabana
+',30,954);
+INSERT INTO `Room` VALUES (20,'single room
+',30,183);
+INSERT INTO `Room` VALUES (20,'double room
+',30,282);
+INSERT INTO `Room` VALUES (21,'single room
+',30,162);
+INSERT INTO `Room` VALUES (21,'double room
+',30,298);
+INSERT INTO `Room` VALUES (21,'double double room
+',30,313);
+INSERT INTO `Room` VALUES (21,'twin room
+',30,482);
+INSERT INTO `Room` VALUES (21,'interconnecting rooms
+',30,543);
+INSERT INTO `Room` VALUES (21,'adjoining rooms
+',30,679);
+INSERT INTO `Room` VALUES (21,'holllywood twin room
+',30,786);
+INSERT INTO `Room` VALUES (21,'duplex
+',30,889);
+INSERT INTO `Room` VALUES (21,'cabana
+',30,946);
+INSERT INTO `Room` VALUES (21,'studio room
+',30,1058);
+INSERT INTO `Room` VALUES (21,'parlor
+',30,1102);
+INSERT INTO `Room` VALUES (22,'single room
+',30,170);
+INSERT INTO `Room` VALUES (22,'double room
+',30,217);
+INSERT INTO `Room` VALUES (22,'double double room
+',30,389);
+INSERT INTO `Room` VALUES (22,'twin room
+',30,409);
+INSERT INTO `Room` VALUES (22,'interconnecting rooms
+',30,560);
+INSERT INTO `Room` VALUES (22,'adjoining rooms
+',30,695);
+INSERT INTO `Room` VALUES (22,'holllywood twin room
+',30,795);
+INSERT INTO `Room` VALUES (23,'single room
+',30,190);
+INSERT INTO `Room` VALUES (23,'double room
+',30,264);
+INSERT INTO `Room` VALUES (23,'double double room
+',30,378);
+INSERT INTO `Room` VALUES (23,'twin room
+',30,440);
+INSERT INTO `Room` VALUES (23,'interconnecting rooms
+',30,502);
+INSERT INTO `Room` VALUES (23,'adjoining rooms
+',30,646);
+INSERT INTO `Room` VALUES (23,'holllywood twin room
+',30,795);
+INSERT INTO `Room` VALUES (23,'duplex
+',30,877);
+INSERT INTO `Room` VALUES (23,'cabana
+',30,967);
+INSERT INTO `Room` VALUES (23,'studio room
+',30,1040);
+INSERT INTO `Room` VALUES (23,'parlor
+',30,1130);
+INSERT INTO `Room` VALUES (23,'lanal
+',30,1250);
+INSERT INTO `Room` VALUES (23,'efficiency room
+',30,1322);
+INSERT INTO `Room` VALUES (23,'hospitality room
+',30,1493);
+INSERT INTO `Room` VALUES (23,'suite room
+',30,1547);
+INSERT INTO `Room` VALUES (24,'single room
+',30,135);
+INSERT INTO `Room` VALUES (24,'double room
+',30,274);
+INSERT INTO `Room` VALUES (24,'double double room
+',30,391);
+INSERT INTO `Room` VALUES (24,'twin room
+',30,414);
+INSERT INTO `Room` VALUES (24,'interconnecting rooms
+',30,560);
+INSERT INTO `Room` VALUES (24,'adjoining rooms
+',30,679);
+INSERT INTO `Room` VALUES (24,'holllywood twin room
+',30,761);
+INSERT INTO `Room` VALUES (25,'single room
+',30,117);
+INSERT INTO `Room` VALUES (25,'double room
+',30,282);
+INSERT INTO `Room` VALUES (25,'double double room
+',30,331);
+INSERT INTO `Room` VALUES (25,'twin room
+',30,435);
+INSERT INTO `Room` VALUES (25,'interconnecting rooms
+',30,570);
+INSERT INTO `Room` VALUES (25,'adjoining rooms
+',30,640);
+INSERT INTO `Room` VALUES (25,'holllywood twin room
+',30,796);
+INSERT INTO `Room` VALUES (25,'duplex
+',30,864);
+INSERT INTO `Room` VALUES (25,'cabana
+',30,935);
+INSERT INTO `Room` VALUES (25,'studio room
+',30,1085);
+INSERT INTO `Room` VALUES (25,'parlor
+',30,1128);
+INSERT INTO `Room` VALUES (25,'lanal
+',30,1212);
+INSERT INTO `Room` VALUES (25,'efficiency room
+',30,1325);
+INSERT INTO `Room` VALUES (25,'hospitality room
+',30,1430);
+INSERT INTO `Room` VALUES (26,'single room
+',30,159);
+INSERT INTO `Room` VALUES (26,'double room
+',30,219);
+INSERT INTO `Room` VALUES (26,'double double room
+',30,307);
+INSERT INTO `Room` VALUES (26,'twin room
+',30,425);
+INSERT INTO `Room` VALUES (26,'interconnecting rooms
+',30,560);
+INSERT INTO `Room` VALUES (26,'adjoining rooms
+',30,638);
+INSERT INTO `Room` VALUES (26,'holllywood twin room
+',30,775);
+INSERT INTO `Room` VALUES (26,'duplex
+',30,883);
+INSERT INTO `Room` VALUES (26,'cabana
+',30,930);
+INSERT INTO `Room` VALUES (26,'studio room
+',30,1022);
+INSERT INTO `Room` VALUES (26,'parlor
+',30,1117);
+INSERT INTO `Room` VALUES (26,'lanal
+',30,1204);
+INSERT INTO `Room` VALUES (26,'efficiency room
+',30,1313);
+INSERT INTO `Room` VALUES (27,'single room
+',30,132);
+INSERT INTO `Room` VALUES (27,'double room
+',30,265);
+INSERT INTO `Room` VALUES (28,'single room
+',30,192);
+INSERT INTO `Room` VALUES (28,'double room
+',30,293);
+INSERT INTO `Room` VALUES (28,'double double room
+',30,382);
+INSERT INTO `Room` VALUES (28,'twin room
+',30,474);
+INSERT INTO `Room` VALUES (28,'interconnecting rooms
+',30,523);
+INSERT INTO `Room` VALUES (28,'adjoining rooms
+',30,616);
+INSERT INTO `Room` VALUES (28,'holllywood twin room
+',30,743);
+INSERT INTO `Room` VALUES (28,'duplex
+',30,864);
+INSERT INTO `Room` VALUES (29,'single room
+',30,111);
+INSERT INTO `Room` VALUES (29,'double room
+',30,207);
+INSERT INTO `Room` VALUES (29,'double double room
+',30,399);
+INSERT INTO `Room` VALUES (29,'twin room
+',30,497);
+INSERT INTO `Room` VALUES (29,'interconnecting rooms
+',30,536);
+INSERT INTO `Room` VALUES (29,'adjoining rooms
+',30,611);
+INSERT INTO `Room` VALUES (29,'holllywood twin room
+',30,721);
+INSERT INTO `Room` VALUES (29,'duplex
+',30,867);
+INSERT INTO `Room` VALUES (29,'cabana
+',30,971);
+INSERT INTO `Room` VALUES (29,'studio room
+',30,1041);
+INSERT INTO `Room` VALUES (29,'parlor
+',30,1174);
+INSERT INTO `Room` VALUES (29,'lanal
+',30,1296);
+INSERT INTO `Room` VALUES (29,'efficiency room
+',30,1301);
+INSERT INTO `Room` VALUES (29,'hospitality room
+',30,1411);
+INSERT INTO `Room` VALUES (29,'suite room
+',30,1571);
+
+    create table `BookHistory` (
+    `bookReference` varchar(20) NOT NULL,
+    `userID` int(20) NOT NULL,
+    `hotelID` int(20) NOT NULL,
+    `Sdate` date,
+    `Edate` date,
+    `roomType` VARCHAR(20),
+    `comment` VARCHAR(200),
+     PRIMARY KEY (`bookReference`)
+    );
+INSERT INTO `BookHistory` VALUES (09983375,41,0,'2016-11-28','2016-11-30','single room
+','not bad');
+INSERT INTO `BookHistory` VALUES (14192849,71,0,'2016-11-15','2016-11-18','double room
+','good');
+INSERT INTO `BookHistory` VALUES (27139284,25,0,'2016-11-29','2016-11-30','double double room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (32581342,9,0,'2016-11-19','2016-11-20','twin room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (4953487,65,0,'2016-11-30','2016-11-30','interconnecting rooms
+','nice one');
+INSERT INTO `BookHistory` VALUES (56557495,24,0,'2016-11-1','2016-11-9','adjoining rooms
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (62411484,43,0,'2016-11-27','2016-11-30','holllywood twin room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (74325104,23,0,'2016-11-28','2016-11-29','duplex
+','good');
+INSERT INTO `BookHistory` VALUES (82311147,14,0,'2016-11-27','2016-11-28','cabana
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (9141145,56,0,'2016-11-3','2016-11-24','studio room
+','good');
+INSERT INTO `BookHistory` VALUES (105622734,81,0,'2016-11-4','2016-11-9','parlor
+','just so so');
+INSERT INTO `BookHistory` VALUES (118118823,1,0,'2016-11-12','2016-11-30','lanal
+','nice one');
+INSERT INTO `BookHistory` VALUES (12170725,68,0,'2016-11-6','2016-11-29','efficiency room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (13682320,1,0,'2016-11-13','2016-11-18','hospitality room
+','nice one');
+INSERT INTO `BookHistory` VALUES (1412981,2,0,'2016-11-5','2016-11-18','suite room
+','nice one');
+INSERT INTO `BookHistory` VALUES (15294811,82,1,'2016-11-11','2016-11-24','single room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (168260609,11,1,'2016-11-5','2016-11-19','double room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (171146718,90,1,'2016-11-14','2016-11-19','double double room
+','good choise');
+INSERT INTO `BookHistory` VALUES (189014356,79,1,'2016-11-17','2016-11-19','twin room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (197957981,3,1,'2016-11-3','2016-11-22','interconnecting rooms
+','good choise');
+INSERT INTO `BookHistory` VALUES (20321507,73,1,'2016-11-19','2016-11-23','adjoining rooms
+','not bad');
+INSERT INTO `BookHistory` VALUES (217316337,7,1,'2016-11-3','2016-11-4','holllywood twin room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (22720704,25,1,'2016-11-10','2016-11-21','duplex
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (232520501,15,1,'2016-11-11','2016-11-25','cabana
+','not bad');
+INSERT INTO `BookHistory` VALUES (241513148,37,1,'2016-11-28','2016-11-29','studio room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (253794719,1,1,'2016-11-20','2016-11-23','parlor
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (26192957,89,1,'2016-11-30','2016-11-30','lanal
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (278998334,18,1,'2016-11-3','2016-11-10','efficiency room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (281838063,44,1,'2016-11-12','2016-11-13','hospitality room
+','just so so');
+INSERT INTO `BookHistory` VALUES (294424009,42,1,'2016-11-1','2016-11-24','suite room
+','good choise');
+INSERT INTO `BookHistory` VALUES (304240435,97,2,'2016-11-8','2016-11-27','single room
+','good');
+INSERT INTO `BookHistory` VALUES (31973773,89,2,'2016-11-7','2016-11-18','double room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (328931379,55,2,'2016-11-11','2016-11-23','double double room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (335561508,73,2,'2016-11-25','2016-11-27','twin room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (347314410,54,2,'2016-11-26','2016-11-30','interconnecting rooms
+','great');
+INSERT INTO `BookHistory` VALUES (355491622,21,2,'2016-11-3','2016-11-15','adjoining rooms
+','good choise');
+INSERT INTO `BookHistory` VALUES (362140670,4,2,'2016-11-1','2016-11-22','holllywood twin room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (37444257,31,2,'2016-11-16','2016-11-20','duplex
+','just so so');
+INSERT INTO `BookHistory` VALUES (383184885,9,2,'2016-11-22','2016-11-23','cabana
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (39986462,27,2,'2016-11-13','2016-11-30','studio room
+','great');
+INSERT INTO `BookHistory` VALUES (402743246,0,2,'2016-11-3','2016-11-15','parlor
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (41029214,56,2,'2016-11-13','2016-11-29','lanal
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (425645555,94,2,'2016-11-21','2016-11-30','efficiency room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (439464841,38,2,'2016-11-13','2016-11-16','hospitality room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (443896526,6,2,'2016-11-19','2016-11-28','suite room
+','good choise');
+INSERT INTO `BookHistory` VALUES (45640602,39,3,'2016-11-16','2016-11-21','single room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (463993027,63,3,'2016-11-29','2016-11-30','double room
+','good choise');
+INSERT INTO `BookHistory` VALUES (476338564,62,3,'2016-11-30','2016-11-30','double double room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (486284129,57,3,'2016-11-23','2016-11-23','twin room
+','good');
+INSERT INTO `BookHistory` VALUES (495716788,16,3,'2016-11-21','2016-11-26','interconnecting rooms
+','nice one');
+INSERT INTO `BookHistory` VALUES (501661632,50,3,'2016-11-3','2016-11-3','adjoining rooms
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (515062661,6,3,'2016-11-10','2016-11-21','holllywood twin room
+','not bad');
+INSERT INTO `BookHistory` VALUES (52680031,32,3,'2016-11-17','2016-11-22','duplex
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (533244184,68,3,'2016-11-6','2016-11-9','cabana
+','not bad');
+INSERT INTO `BookHistory` VALUES (546893036,4,3,'2016-11-13','2016-11-29','studio room
+','not bad');
+INSERT INTO `BookHistory` VALUES (55472506,46,3,'2016-11-13','2016-11-22','parlor
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (56468924,35,3,'2016-11-19','2016-11-22','lanal
+','nice one');
+INSERT INTO `BookHistory` VALUES (573562189,23,3,'2016-11-8','2016-11-10','efficiency room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (582369806,0,3,'2016-11-5','2016-11-30','hospitality room
+','not bad');
+INSERT INTO `BookHistory` VALUES (5906796,2,3,'2016-11-21','2016-11-24','suite room
+','nice one');
+INSERT INTO `BookHistory` VALUES (60256739,51,4,'2016-11-18','2016-11-30','single room
+','good');
+INSERT INTO `BookHistory` VALUES (615115593,5,4,'2016-11-18','2016-11-24','double room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (62596360,7,4,'2016-11-5','2016-11-21','double double room
+','just so so');
+INSERT INTO `BookHistory` VALUES (63738615,1,4,'2016-11-11','2016-11-15','twin room
+','great');
+INSERT INTO `BookHistory` VALUES (64128369,56,4,'2016-11-3','2016-11-29','interconnecting rooms
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (655632685,75,4,'2016-11-26','2016-11-27','adjoining rooms
+','not bad');
+INSERT INTO `BookHistory` VALUES (667546348,86,4,'2016-11-16','2016-11-19','holllywood twin room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (678611603,39,4,'2016-11-12','2016-11-15','duplex
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (683920955,16,4,'2016-11-28','2016-11-29','cabana
+','great');
+INSERT INTO `BookHistory` VALUES (691648822,41,4,'2016-11-28','2016-11-29','studio room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (704144509,73,4,'2016-11-13','2016-11-29','parlor
+','nice one');
+INSERT INTO `BookHistory` VALUES (717327065,38,4,'2016-11-6','2016-11-14','lanal
+','good choise');
+INSERT INTO `BookHistory` VALUES (723812631,49,4,'2016-11-3','2016-11-17','efficiency room
+','just so so');
+INSERT INTO `BookHistory` VALUES (73499799,57,4,'2016-11-8','2016-11-15','hospitality room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (745789644,21,4,'2016-11-26','2016-11-29','suite room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (752184238,19,5,'2016-11-26','2016-11-29','single room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (761966402,23,5,'2016-11-29','2016-11-29','double room
+','nice one');
+INSERT INTO `BookHistory` VALUES (772365737,50,5,'2016-11-18','2016-11-23','double double room
+','great');
+INSERT INTO `BookHistory` VALUES (785083778,97,5,'2016-11-3','2016-11-10','twin room
+','just so so');
+INSERT INTO `BookHistory` VALUES (799797925,53,5,'2016-11-8','2016-11-29','interconnecting rooms
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (80537623,12,5,'2016-11-8','2016-11-19','adjoining rooms
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (811283214,56,5,'2016-11-11','2016-11-15','holllywood twin room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (825630370,33,5,'2016-11-15','2016-11-27','duplex
+','not bad');
+INSERT INTO `BookHistory` VALUES (833363328,52,5,'2016-11-25','2016-11-27','cabana
+','great');
+INSERT INTO `BookHistory` VALUES (845225849,97,5,'2016-11-11','2016-11-20','studio room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (859789410,89,5,'2016-11-27','2016-11-30','parlor
+','great');
+INSERT INTO `BookHistory` VALUES (868956938,57,5,'2016-11-24','2016-11-27','lanal
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (875742405,23,5,'2016-11-13','2016-11-17','efficiency room
+','great');
+INSERT INTO `BookHistory` VALUES (882382092,34,5,'2016-11-8','2016-11-10','hospitality room
+','just so so');
+INSERT INTO `BookHistory` VALUES (893420169,67,5,'2016-11-1','2016-11-5','suite room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (906791072,3,6,'2016-11-27','2016-11-27','single room
+','great');
+INSERT INTO `BookHistory` VALUES (91344856,45,6,'2016-11-25','2016-11-26','double room
+','good choise');
+INSERT INTO `BookHistory` VALUES (924594885,74,6,'2016-11-17','2016-11-30','double double room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (937466670,51,6,'2016-11-30','2016-11-30','twin room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (945180792,88,6,'2016-11-15','2016-11-21','interconnecting rooms
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (958852666,13,6,'2016-11-7','2016-11-11','adjoining rooms
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (961380705,30,6,'2016-11-23','2016-11-25','holllywood twin room
+','nice one');
+INSERT INTO `BookHistory` VALUES (973055289,42,6,'2016-11-6','2016-11-12','duplex
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (984236242,34,6,'2016-11-28','2016-11-30','cabana
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (993499309,20,6,'2016-11-8','2016-11-30','studio room
+','great');
+INSERT INTO `BookHistory` VALUES (1002056724,71,6,'2016-11-11','2016-11-13','parlor
+','good choise');
+INSERT INTO `BookHistory` VALUES (1017158772,65,6,'2016-11-29','2016-11-30','lanal
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (1026528177,15,6,'2016-11-24','2016-11-24','efficiency room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (10315438,98,6,'2016-11-26','2016-11-30','hospitality room
+','great');
+INSERT INTO `BookHistory` VALUES (1049840177,69,6,'2016-11-11','2016-11-20','suite room
+','nice one');
+INSERT INTO `BookHistory` VALUES (10569981,23,7,'2016-11-24','2016-11-29','single room
+','good choise');
+INSERT INTO `BookHistory` VALUES (1062351993,45,7,'2016-11-15','2016-11-22','double room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (107456124,27,7,'2016-11-3','2016-11-7','double double room
+','great');
+INSERT INTO `BookHistory` VALUES (1082775866,22,7,'2016-11-26','2016-11-26','twin room
+','nice one');
+INSERT INTO `BookHistory` VALUES (1092221394,84,7,'2016-11-17','2016-11-28','interconnecting rooms
+','good');
+INSERT INTO `BookHistory` VALUES (1108421213,3,7,'2016-11-7','2016-11-14','adjoining rooms
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (111316668,9,7,'2016-11-10','2016-11-19','holllywood twin room
+','good choise');
+INSERT INTO `BookHistory` VALUES (112976454,70,7,'2016-11-10','2016-11-18','duplex
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (1137057470,67,7,'2016-11-30','2016-11-30','cabana
+','not bad');
+INSERT INTO `BookHistory` VALUES (1146733872,7,7,'2016-11-23','2016-11-27','studio room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (115784773,54,7,'2016-11-4','2016-11-16','parlor
+','not bad');
+INSERT INTO `BookHistory` VALUES (116545206,52,7,'2016-11-23','2016-11-27','lanal
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (1175279012,65,7,'2016-11-16','2016-11-22','efficiency room
+','great');
+INSERT INTO `BookHistory` VALUES (1186540315,21,7,'2016-11-19','2016-11-26','hospitality room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (1192179878,50,7,'2016-11-3','2016-11-26','suite room
+','just so so');
+INSERT INTO `BookHistory` VALUES (1205064799,70,8,'2016-11-28','2016-11-30','single room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (1217033213,44,8,'2016-11-8','2016-11-27','double room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (1224437585,59,8,'2016-11-25','2016-11-25','double double room
+','just so so');
+INSERT INTO `BookHistory` VALUES (1235963639,69,8,'2016-11-7','2016-11-24','twin room
+','great');
+INSERT INTO `BookHistory` VALUES (1246952046,42,8,'2016-11-24','2016-11-30','interconnecting rooms
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (125423169,70,8,'2016-11-21','2016-11-26','adjoining rooms
+','not bad');
+INSERT INTO `BookHistory` VALUES (1267034428,88,8,'2016-11-5','2016-11-8','holllywood twin room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (1278889116,3,8,'2016-11-17','2016-11-21','duplex
+','good');
+INSERT INTO `BookHistory` VALUES (128352098,81,8,'2016-11-1','2016-11-18','cabana
+','just so so');
+INSERT INTO `BookHistory` VALUES (1298145537,35,8,'2016-11-24','2016-11-30','studio room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (1303565706,24,8,'2016-11-7','2016-11-17','parlor
+','not bad');
+INSERT INTO `BookHistory` VALUES (1312475812,85,8,'2016-11-29','2016-11-29','lanal
+','nice one');
+INSERT INTO `BookHistory` VALUES (1328548571,31,8,'2016-11-27','2016-11-29','efficiency room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (1333177148,49,8,'2016-11-22','2016-11-22','hospitality room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (1344956373,68,8,'2016-11-18','2016-11-20','suite room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (135683129,33,9,'2016-11-10','2016-11-11','single room
+','good');
+INSERT INTO `BookHistory` VALUES (1363330898,54,9,'2016-11-22','2016-11-30','double room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (1375475148,71,9,'2016-11-1','2016-11-4','double double room
+','just so so');
+INSERT INTO `BookHistory` VALUES (1387156604,82,9,'2016-11-27','2016-11-29','twin room
+','just so so');
+INSERT INTO `BookHistory` VALUES (1398218368,78,9,'2016-11-13','2016-11-16','interconnecting rooms
+','nice one');
+INSERT INTO `BookHistory` VALUES (1407854148,61,9,'2016-11-4','2016-11-27','adjoining rooms
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (1416142255,42,9,'2016-11-16','2016-11-21','holllywood twin room
+','just so so');
+INSERT INTO `BookHistory` VALUES (142421778,43,9,'2016-11-4','2016-11-16','duplex
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (1434361647,35,9,'2016-11-13','2016-11-23','cabana
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (1443586665,92,9,'2016-11-13','2016-11-25','studio room
+','not bad');
+INSERT INTO `BookHistory` VALUES (1459258760,60,9,'2016-11-22','2016-11-22','parlor
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (1466013259,50,9,'2016-11-7','2016-11-17','lanal
+','great');
+INSERT INTO `BookHistory` VALUES (1475091000,97,9,'2016-11-2','2016-11-11','efficiency room
+','nice one');
+INSERT INTO `BookHistory` VALUES (148978685,87,9,'2016-11-19','2016-11-22','hospitality room
+','good');
+INSERT INTO `BookHistory` VALUES (149873658,44,9,'2016-11-4','2016-11-28','suite room
+','just so so');
+INSERT INTO `BookHistory` VALUES (1504451300,71,10,'2016-11-21','2016-11-28','single room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (1517175728,43,10,'2016-11-2','2016-11-10','double room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (1524396438,29,10,'2016-11-15','2016-11-18','double double room
+','good');
+INSERT INTO `BookHistory` VALUES (153292525,28,10,'2016-11-13','2016-11-22','twin room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (1542896504,10,10,'2016-11-1','2016-11-21','interconnecting rooms
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (1551013088,0,10,'2016-11-5','2016-11-11','adjoining rooms
+','great');
+INSERT INTO `BookHistory` VALUES (156078246,27,10,'2016-11-26','2016-11-27','holllywood twin room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (1572716129,85,10,'2016-11-5','2016-11-20','duplex
+','nice one');
+INSERT INTO `BookHistory` VALUES (1588554264,22,10,'2016-11-11','2016-11-18','cabana
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (1592274795,62,10,'2016-11-8','2016-11-8','studio room
+','good choise');
+INSERT INTO `BookHistory` VALUES (1606234343,29,10,'2016-11-9','2016-11-13','parlor
+','not bad');
+INSERT INTO `BookHistory` VALUES (1612928024,76,10,'2016-11-9','2016-11-19','lanal
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (162763213,46,10,'2016-11-28','2016-11-29','efficiency room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (1634670244,22,10,'2016-11-1','2016-11-4','hospitality room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (1642228228,89,10,'2016-11-25','2016-11-29','suite room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (1658994740,68,11,'2016-11-30','2016-11-30','single room
+','just so so');
+INSERT INTO `BookHistory` VALUES (1666834225,80,11,'2016-11-8','2016-11-16','double room
+','just so so');
+INSERT INTO `BookHistory` VALUES (1678022262,47,11,'2016-11-9','2016-11-19','double double room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (1684783428,16,11,'2016-11-3','2016-11-4','twin room
+','good choise');
+INSERT INTO `BookHistory` VALUES (1691623817,97,11,'2016-11-24','2016-11-29','interconnecting rooms
+','great');
+INSERT INTO `BookHistory` VALUES (1709768223,34,11,'2016-11-1','2016-11-20','adjoining rooms
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (1713435484,45,11,'2016-11-29','2016-11-30','holllywood twin room
+','not bad');
+INSERT INTO `BookHistory` VALUES (1724563387,45,11,'2016-11-19','2016-11-27','duplex
+','great');
+INSERT INTO `BookHistory` VALUES (1734545428,71,11,'2016-11-7','2016-11-16','cabana
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (1747185210,76,11,'2016-11-25','2016-11-25','studio room
+','nice one');
+INSERT INTO `BookHistory` VALUES (1757634612,49,11,'2016-11-14','2016-11-22','parlor
+','good choise');
+INSERT INTO `BookHistory` VALUES (176499678,12,11,'2016-11-18','2016-11-23','lanal
+','great');
+INSERT INTO `BookHistory` VALUES (177121229,64,11,'2016-11-4','2016-11-14','efficiency room
+','just so so');
+INSERT INTO `BookHistory` VALUES (1786433666,99,11,'2016-11-6','2016-11-6','hospitality room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (1799998429,83,11,'2016-11-7','2016-11-8','suite room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (1808353477,72,12,'2016-11-25','2016-11-27','single room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (1817230691,98,12,'2016-11-20','2016-11-27','double room
+','just so so');
+INSERT INTO `BookHistory` VALUES (1829841134,94,12,'2016-11-13','2016-11-27','double double room
+','just so so');
+INSERT INTO `BookHistory` VALUES (1839438587,86,12,'2016-11-18','2016-11-18','twin room
+','good choise');
+INSERT INTO `BookHistory` VALUES (1848657519,41,12,'2016-11-26','2016-11-27','interconnecting rooms
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (1854197725,42,12,'2016-11-22','2016-11-24','adjoining rooms
+','nice one');
+INSERT INTO `BookHistory` VALUES (1864259822,31,12,'2016-11-13','2016-11-18','holllywood twin room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (1873131999,97,12,'2016-11-12','2016-11-12','duplex
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (1889731050,25,12,'2016-11-26','2016-11-28','cabana
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (1892597358,3,12,'2016-11-1','2016-11-9','studio room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (190360603,26,12,'2016-11-24','2016-11-29','parlor
+','nice one');
+INSERT INTO `BookHistory` VALUES (1912635143,22,12,'2016-11-28','2016-11-28','lanal
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (1922245260,56,12,'2016-11-14','2016-11-20','efficiency room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (1935663932,57,12,'2016-11-26','2016-11-30','hospitality room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (1945718438,9,12,'2016-11-10','2016-11-25','suite room
+','just so so');
+INSERT INTO `BookHistory` VALUES (195939295,4,13,'2016-11-7','2016-11-24','single room
+','good');
+INSERT INTO `BookHistory` VALUES (196446111,14,13,'2016-11-12','2016-11-22','double room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (197142039,59,13,'2016-11-22','2016-11-28','double double room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (1985994052,73,13,'2016-11-4','2016-11-16','twin room
+','good choise');
+INSERT INTO `BookHistory` VALUES (199739244,45,13,'2016-11-24','2016-11-29','interconnecting rooms
+','great');
+INSERT INTO `BookHistory` VALUES (2004517232,35,13,'2016-11-2','2016-11-12','adjoining rooms
+','nice one');
+INSERT INTO `BookHistory` VALUES (2013523416,85,13,'2016-11-9','2016-11-19','holllywood twin room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (202858421,62,13,'2016-11-6','2016-11-25','duplex
+','great');
+INSERT INTO `BookHistory` VALUES (2036222396,9,13,'2016-11-30','2016-11-30','cabana
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (204992934,59,13,'2016-11-29','2016-11-29','studio room
+','not bad');
+INSERT INTO `BookHistory` VALUES (205593510,79,13,'2016-11-30','2016-11-30','parlor
+','not bad');
+INSERT INTO `BookHistory` VALUES (2067955069,15,13,'2016-11-24','2016-11-28','lanal
+','good');
+INSERT INTO `BookHistory` VALUES (2071548033,35,13,'2016-11-23','2016-11-28','efficiency room
+','not bad');
+INSERT INTO `BookHistory` VALUES (208357435,8,13,'2016-11-29','2016-11-29','hospitality room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (209817874,12,13,'2016-11-27','2016-11-30','suite room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (2101277139,98,14,'2016-11-4','2016-11-10','single room
+','nice one');
+INSERT INTO `BookHistory` VALUES (2119889182,47,14,'2016-11-2','2016-11-3','double room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2124741696,82,14,'2016-11-18','2016-11-26','double double room
+','great');
+INSERT INTO `BookHistory` VALUES (2138223910,78,14,'2016-11-10','2016-11-10','twin room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (2147823971,22,14,'2016-11-28','2016-11-30','interconnecting rooms
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (215227765,0,14,'2016-11-30','2016-11-30','adjoining rooms
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (216040646,61,14,'2016-11-1','2016-11-2','holllywood twin room
+','good');
+INSERT INTO `BookHistory` VALUES (2176110109,45,14,'2016-11-25','2016-11-26','duplex
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (2184523959,41,14,'2016-11-3','2016-11-27','cabana
+','just so so');
+INSERT INTO `BookHistory` VALUES (2194177337,30,14,'2016-11-1','2016-11-24','studio room
+','just so so');
+INSERT INTO `BookHistory` VALUES (2203024564,88,14,'2016-11-24','2016-11-30','parlor
+','good choise');
+INSERT INTO `BookHistory` VALUES (2218858477,36,14,'2016-11-29','2016-11-30','lanal
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (2223652547,3,14,'2016-11-23','2016-11-28','efficiency room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (22335962,95,14,'2016-11-18','2016-11-21','hospitality room
+','good');
+INSERT INTO `BookHistory` VALUES (2249586144,25,14,'2016-11-17','2016-11-25','suite room
+','just so so');
+INSERT INTO `BookHistory` VALUES (2252544362,29,15,'2016-11-3','2016-11-19','single room
+','just so so');
+INSERT INTO `BookHistory` VALUES (2262934666,3,15,'2016-11-1','2016-11-14','double room
+','great');
+INSERT INTO `BookHistory` VALUES (227388619,98,15,'2016-11-2','2016-11-20','double double room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (2289885701,69,15,'2016-11-27','2016-11-29','twin room
+','not bad');
+INSERT INTO `BookHistory` VALUES (2296932674,61,15,'2016-11-16','2016-11-27','interconnecting rooms
+','great');
+INSERT INTO `BookHistory` VALUES (2306199213,26,15,'2016-11-15','2016-11-22','adjoining rooms
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (2312614355,73,15,'2016-11-6','2016-11-19','holllywood twin room
+','nice one');
+INSERT INTO `BookHistory` VALUES (2327319350,26,15,'2016-11-3','2016-11-29','duplex
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2332650492,7,15,'2016-11-1','2016-11-14','cabana
+','just so so');
+INSERT INTO `BookHistory` VALUES (234733956,5,15,'2016-11-27','2016-11-28','studio room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (235551986,18,15,'2016-11-14','2016-11-25','parlor
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (2361854282,51,15,'2016-11-9','2016-11-21','lanal
+','not bad');
+INSERT INTO `BookHistory` VALUES (2375144198,83,15,'2016-11-27','2016-11-30','efficiency room
+','great');
+INSERT INTO `BookHistory` VALUES (2388344433,49,15,'2016-11-30','2016-11-30','hospitality room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (2394934721,57,15,'2016-11-27','2016-11-30','suite room
+','good choise');
+INSERT INTO `BookHistory` VALUES (2405742374,94,16,'2016-11-21','2016-11-27','single room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (2419468291,25,16,'2016-11-14','2016-11-27','double room
+','great');
+INSERT INTO `BookHistory` VALUES (2422529012,61,16,'2016-11-14','2016-11-19','double double room
+','good choise');
+INSERT INTO `BookHistory` VALUES (2436148278,22,16,'2016-11-3','2016-11-12','twin room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (2442214092,27,16,'2016-11-9','2016-11-27','interconnecting rooms
+','not bad');
+INSERT INTO `BookHistory` VALUES (2452798176,21,16,'2016-11-26','2016-11-26','adjoining rooms
+','good');
+INSERT INTO `BookHistory` VALUES (2462145126,27,16,'2016-11-5','2016-11-5','holllywood twin room
+','nice one');
+INSERT INTO `BookHistory` VALUES (2472758951,81,16,'2016-11-12','2016-11-21','duplex
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (2488134350,30,16,'2016-11-28','2016-11-30','cabana
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2493038304,19,16,'2016-11-1','2016-11-23','studio room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (2501916155,2,16,'2016-11-5','2016-11-10','parlor
+','nice one');
+INSERT INTO `BookHistory` VALUES (251224927,14,16,'2016-11-30','2016-11-30','lanal
+','nice one');
+INSERT INTO `BookHistory` VALUES (2521458499,15,16,'2016-11-20','2016-11-28','efficiency room
+','good choise');
+INSERT INTO `BookHistory` VALUES (2531596006,45,16,'2016-11-25','2016-11-29','hospitality room
+','just so so');
+INSERT INTO `BookHistory` VALUES (2544524932,43,16,'2016-11-21','2016-11-27','suite room
+','nice one');
+INSERT INTO `BookHistory` VALUES (25543270,64,17,'2016-11-24','2016-11-24','single room
+','good choise');
+INSERT INTO `BookHistory` VALUES (2566410477,90,17,'2016-11-8','2016-11-8','double room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (2579062823,64,17,'2016-11-15','2016-11-19','double double room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2586410372,11,17,'2016-11-26','2016-11-27','twin room
+','good');
+INSERT INTO `BookHistory` VALUES (2591178497,44,17,'2016-11-28','2016-11-28','interconnecting rooms
+','great');
+INSERT INTO `BookHistory` VALUES (2604498886,57,17,'2016-11-5','2016-11-27','adjoining rooms
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (2615742098,46,17,'2016-11-14','2016-11-29','holllywood twin room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (2624667124,86,17,'2016-11-26','2016-11-29','duplex
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (2638625098,88,17,'2016-11-6','2016-11-28','cabana
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (264883408,70,17,'2016-11-15','2016-11-26','studio room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (2657080534,23,17,'2016-11-29','2016-11-30','parlor
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2662346677,46,17,'2016-11-1','2016-11-20','lanal
+','just so so');
+INSERT INTO `BookHistory` VALUES (2674648249,90,17,'2016-11-9','2016-11-21','efficiency room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (268904230,71,17,'2016-11-16','2016-11-16','hospitality room
+','great');
+INSERT INTO `BookHistory` VALUES (2697138462,3,17,'2016-11-26','2016-11-30','suite room
+','not bad');
+INSERT INTO `BookHistory` VALUES (27039795,53,18,'2016-11-3','2016-11-9','single room
+','good choise');
+INSERT INTO `BookHistory` VALUES (2715350591,7,18,'2016-11-11','2016-11-15','double room
+','great');
+INSERT INTO `BookHistory` VALUES (272780022,96,18,'2016-11-3','2016-11-14','double double room
+','just so so');
+INSERT INTO `BookHistory` VALUES (2739656901,35,18,'2016-11-20','2016-11-22','twin room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2743571077,23,18,'2016-11-1','2016-11-3','interconnecting rooms
+','not bad');
+INSERT INTO `BookHistory` VALUES (2752389324,71,18,'2016-11-8','2016-11-25','adjoining rooms
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (2767127419,8,18,'2016-11-13','2016-11-24','holllywood twin room
+','nice one');
+INSERT INTO `BookHistory` VALUES (277874086,27,18,'2016-11-8','2016-11-17','duplex
+','good');
+INSERT INTO `BookHistory` VALUES (2782731989,99,18,'2016-11-19','2016-11-27','cabana
+','just so so');
+INSERT INTO `BookHistory` VALUES (2799928497,13,18,'2016-11-16','2016-11-30','studio room
+','nice one');
+INSERT INTO `BookHistory` VALUES (2801323763,22,18,'2016-11-4','2016-11-10','parlor
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (281222604,4,18,'2016-11-23','2016-11-26','lanal
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (282447687,93,18,'2016-11-28','2016-11-28','efficiency room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2839364938,40,18,'2016-11-29','2016-11-29','hospitality room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (2844063152,84,18,'2016-11-15','2016-11-30','suite room
+','just so so');
+INSERT INTO `BookHistory` VALUES (2858457603,51,19,'2016-11-2','2016-11-6','single room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2865166163,8,19,'2016-11-18','2016-11-28','double room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (287848493,41,19,'2016-11-21','2016-11-28','double double room
+','good choise');
+INSERT INTO `BookHistory` VALUES (2884149216,49,19,'2016-11-9','2016-11-11','twin room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2894955872,58,19,'2016-11-13','2016-11-16','interconnecting rooms
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2905898503,4,19,'2016-11-2','2016-11-6','adjoining rooms
+','great');
+INSERT INTO `BookHistory` VALUES (291470753,26,19,'2016-11-19','2016-11-20','holllywood twin room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (2922610584,4,19,'2016-11-14','2016-11-22','duplex
+','not bad');
+INSERT INTO `BookHistory` VALUES (293447403,27,19,'2016-11-7','2016-11-24','cabana
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (2942739818,10,19,'2016-11-22','2016-11-29','studio room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (2951011190,48,19,'2016-11-21','2016-11-22','parlor
+','not bad');
+INSERT INTO `BookHistory` VALUES (2964858347,42,19,'2016-11-17','2016-11-23','lanal
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (2974225821,48,19,'2016-11-23','2016-11-23','efficiency room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (2984885259,52,19,'2016-11-22','2016-11-22','hospitality room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (2995281778,15,19,'2016-11-14','2016-11-23','suite room
+','not bad');
+INSERT INTO `BookHistory` VALUES (3001533650,51,20,'2016-11-24','2016-11-28','single room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (3015163795,24,20,'2016-11-6','2016-11-11','double room
+','not bad');
+INSERT INTO `BookHistory` VALUES (3022482370,56,20,'2016-11-30','2016-11-30','double double room
+','good choise');
+INSERT INTO `BookHistory` VALUES (3035656074,77,20,'2016-11-5','2016-11-14','twin room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (3047758239,2,20,'2016-11-26','2016-11-29','interconnecting rooms
+','good');
+INSERT INTO `BookHistory` VALUES (305220002,50,20,'2016-11-19','2016-11-20','adjoining rooms
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (3065071477,55,20,'2016-11-20','2016-11-28','holllywood twin room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (307558011,54,20,'2016-11-4','2016-11-26','duplex
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (3085457766,85,20,'2016-11-8','2016-11-18','cabana
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (3098554031,38,20,'2016-11-23','2016-11-24','studio room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (3103855522,92,20,'2016-11-14','2016-11-16','parlor
+','nice one');
+INSERT INTO `BookHistory` VALUES (3119266373,1,20,'2016-11-23','2016-11-25','lanal
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (312186491,45,20,'2016-11-17','2016-11-24','efficiency room
+','great');
+INSERT INTO `BookHistory` VALUES (3134564430,34,20,'2016-11-5','2016-11-16','hospitality room
+','great');
+INSERT INTO `BookHistory` VALUES (3143472187,35,20,'2016-11-9','2016-11-10','suite room
+','great');
+INSERT INTO `BookHistory` VALUES (3153581973,70,21,'2016-11-25','2016-11-29','single room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (3167065250,60,21,'2016-11-27','2016-11-28','double room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (3176088071,77,21,'2016-11-6','2016-11-14','double double room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (3187718933,8,21,'2016-11-28','2016-11-29','twin room
+','great');
+INSERT INTO `BookHistory` VALUES (319894307,21,21,'2016-11-12','2016-11-25','interconnecting rooms
+','good choise');
+INSERT INTO `BookHistory` VALUES (3202155956,17,21,'2016-11-5','2016-11-15','adjoining rooms
+','great');
+INSERT INTO `BookHistory` VALUES (3211779068,9,21,'2016-11-28','2016-11-30','holllywood twin room
+','good choise');
+INSERT INTO `BookHistory` VALUES (322927661,33,21,'2016-11-7','2016-11-7','duplex
+','just so so');
+INSERT INTO `BookHistory` VALUES (3233314776,42,21,'2016-11-23','2016-11-26','cabana
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (324428098,40,21,'2016-11-4','2016-11-7','studio room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (3254017563,0,21,'2016-11-1','2016-11-4','parlor
+','good');
+INSERT INTO `BookHistory` VALUES (32601520,74,21,'2016-11-9','2016-11-25','lanal
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (3277481583,16,21,'2016-11-17','2016-11-27','efficiency room
+','good choise');
+INSERT INTO `BookHistory` VALUES (3281665138,26,21,'2016-11-24','2016-11-28','hospitality room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (3292687736,89,21,'2016-11-19','2016-11-26','suite room
+','good');
+INSERT INTO `BookHistory` VALUES (3308919789,84,22,'2016-11-6','2016-11-10','single room
+','great');
+INSERT INTO `BookHistory` VALUES (3318420881,5,22,'2016-11-11','2016-11-19','double room
+','nice one');
+INSERT INTO `BookHistory` VALUES (332517522,15,22,'2016-11-18','2016-11-19','double double room
+','great');
+INSERT INTO `BookHistory` VALUES (3331522540,26,22,'2016-11-10','2016-11-11','twin room
+','just so so');
+INSERT INTO `BookHistory` VALUES (3342694039,87,22,'2016-11-7','2016-11-25','interconnecting rooms
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (3358749662,85,22,'2016-11-10','2016-11-21','adjoining rooms
+','great');
+INSERT INTO `BookHistory` VALUES (3368516948,87,22,'2016-11-11','2016-11-13','holllywood twin room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (337879969,1,22,'2016-11-22','2016-11-27','duplex
+','good');
+INSERT INTO `BookHistory` VALUES (338154218,15,22,'2016-11-16','2016-11-17','cabana
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (3391584590,49,22,'2016-11-12','2016-11-27','studio room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (3404917527,19,22,'2016-11-8','2016-11-11','parlor
+','nice one');
+INSERT INTO `BookHistory` VALUES (3411958231,58,22,'2016-11-7','2016-11-30','lanal
+','nice one');
+INSERT INTO `BookHistory` VALUES (3425830819,0,22,'2016-11-27','2016-11-27','efficiency room
+','not bad');
+INSERT INTO `BookHistory` VALUES (343013224,73,22,'2016-11-24','2016-11-24','hospitality room
+','nice one');
+INSERT INTO `BookHistory` VALUES (3447337918,34,22,'2016-11-9','2016-11-18','suite room
+','good choise');
+INSERT INTO `BookHistory` VALUES (3453450499,93,23,'2016-11-22','2016-11-28','single room
+','great');
+INSERT INTO `BookHistory` VALUES (3469368042,22,23,'2016-11-3','2016-11-17','double room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (3472224823,75,23,'2016-11-9','2016-11-19','double double room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (3487591149,51,23,'2016-11-24','2016-11-28','twin room
+','just so so');
+INSERT INTO `BookHistory` VALUES (3495195253,50,23,'2016-11-30','2016-11-30','interconnecting rooms
+','good choise');
+INSERT INTO `BookHistory` VALUES (3505062141,65,23,'2016-11-25','2016-11-29','adjoining rooms
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (3516589950,57,23,'2016-11-15','2016-11-25','holllywood twin room
+','nice one');
+INSERT INTO `BookHistory` VALUES (3525726080,85,23,'2016-11-10','2016-11-25','duplex
+','just so so');
+INSERT INTO `BookHistory` VALUES (3538536540,50,23,'2016-11-11','2016-11-23','cabana
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (3545084795,71,23,'2016-11-28','2016-11-30','studio room
+','great');
+INSERT INTO `BookHistory` VALUES (3557191700,79,23,'2016-11-24','2016-11-26','parlor
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (3567971454,66,23,'2016-11-12','2016-11-22','lanal
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (3576662997,57,23,'2016-11-17','2016-11-17','efficiency room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (3585793446,0,23,'2016-11-5','2016-11-28','hospitality room
+','nice one');
+INSERT INTO `BookHistory` VALUES (35905159,70,23,'2016-11-27','2016-11-27','suite room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (3607056072,28,24,'2016-11-21','2016-11-30','single room
+','just so so');
+INSERT INTO `BookHistory` VALUES (3612892674,7,24,'2016-11-16','2016-11-20','double room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (362716211,23,24,'2016-11-14','2016-11-22','double double room
+','nice one');
+INSERT INTO `BookHistory` VALUES (3632338466,71,24,'2016-11-8','2016-11-10','twin room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (3647128685,0,24,'2016-11-21','2016-11-23','interconnecting rooms
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (365016733,61,24,'2016-11-4','2016-11-14','adjoining rooms
+','not bad');
+INSERT INTO `BookHistory` VALUES (3666167000,45,24,'2016-11-20','2016-11-27','holllywood twin room
+','great');
+INSERT INTO `BookHistory` VALUES (3674558343,27,24,'2016-11-24','2016-11-25','duplex
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (3682758244,10,24,'2016-11-18','2016-11-18','cabana
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (3691052021,32,24,'2016-11-9','2016-11-21','studio room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (3703241573,13,24,'2016-11-8','2016-11-18','parlor
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (3711368246,12,24,'2016-11-4','2016-11-29','lanal
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (3721247095,41,24,'2016-11-14','2016-11-17','efficiency room
+','great');
+INSERT INTO `BookHistory` VALUES (3734172030,32,24,'2016-11-25','2016-11-28','hospitality room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (3743287542,15,24,'2016-11-15','2016-11-18','suite room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (3751582653,87,25,'2016-11-11','2016-11-23','single room
+','not bad');
+INSERT INTO `BookHistory` VALUES (3768750261,1,25,'2016-11-12','2016-11-28','double room
+','great');
+INSERT INTO `BookHistory` VALUES (377121610,3,25,'2016-11-30','2016-11-30','double double room
+','just so so');
+INSERT INTO `BookHistory` VALUES (378333700,28,25,'2016-11-21','2016-11-23','twin room
+','not bad');
+INSERT INTO `BookHistory` VALUES (3792830125,0,25,'2016-11-2','2016-11-13','interconnecting rooms
+','good');
+INSERT INTO `BookHistory` VALUES (380018682,78,25,'2016-11-21','2016-11-22','adjoining rooms
+','great');
+INSERT INTO `BookHistory` VALUES (381789400,8,25,'2016-11-5','2016-11-15','holllywood twin room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (382834771,18,25,'2016-11-2','2016-11-29','duplex
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (3831833244,23,25,'2016-11-28','2016-11-28','cabana
+','not bad');
+INSERT INTO `BookHistory` VALUES (3842397774,65,25,'2016-11-10','2016-11-23','studio room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (3856513770,23,25,'2016-11-30','2016-11-30','parlor
+','great');
+INSERT INTO `BookHistory` VALUES (3862391501,64,25,'2016-11-12','2016-11-30','lanal
+','just so so');
+INSERT INTO `BookHistory` VALUES (3876486212,12,25,'2016-11-19','2016-11-26','efficiency room
+','good choise');
+INSERT INTO `BookHistory` VALUES (388123468,87,25,'2016-11-1','2016-11-12','hospitality room
+','good');
+INSERT INTO `BookHistory` VALUES (3898768261,62,25,'2016-11-30','2016-11-30','suite room
+','great');
+INSERT INTO `BookHistory` VALUES (3906231206,76,26,'2016-11-9','2016-11-24','single room
+','not bad');
+INSERT INTO `BookHistory` VALUES (3917661299,85,26,'2016-11-1','2016-11-17','double room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (392854850,46,26,'2016-11-15','2016-11-26','double double room
+','not bad');
+INSERT INTO `BookHistory` VALUES (3934657641,47,26,'2016-11-4','2016-11-6','twin room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (39447738,21,26,'2016-11-27','2016-11-27','interconnecting rooms
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (3952124255,89,26,'2016-11-17','2016-11-17','adjoining rooms
+','good choise');
+INSERT INTO `BookHistory` VALUES (3968982215,34,26,'2016-11-29','2016-11-29','holllywood twin room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (397343854,98,26,'2016-11-14','2016-11-16','duplex
+','just so so');
+INSERT INTO `BookHistory` VALUES (3989890260,37,26,'2016-11-21','2016-11-26','cabana
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (3993766524,36,26,'2016-11-26','2016-11-27','studio room
+','good');
+INSERT INTO `BookHistory` VALUES (400368703,77,26,'2016-11-23','2016-11-27','parlor
+','just so so');
+INSERT INTO `BookHistory` VALUES (4017710869,23,26,'2016-11-9','2016-11-17','lanal
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (4022321689,52,26,'2016-11-15','2016-11-30','efficiency room
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (4035261921,88,26,'2016-11-11','2016-11-11','hospitality room
+','good');
+INSERT INTO `BookHistory` VALUES (4048814779,2,26,'2016-11-18','2016-11-30','suite room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (405282015,7,27,'2016-11-21','2016-11-26','single room
+','not bad');
+INSERT INTO `BookHistory` VALUES (406769664,96,27,'2016-11-16','2016-11-30','double room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (4079694999,18,27,'2016-11-2','2016-11-13','double double room
+','just so so');
+INSERT INTO `BookHistory` VALUES (408181445,40,27,'2016-11-1','2016-11-27','twin room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (4094033343,25,27,'2016-11-30','2016-11-30','interconnecting rooms
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (4102599822,75,27,'2016-11-7','2016-11-28','adjoining rooms
+','great');
+INSERT INTO `BookHistory` VALUES (4117591749,99,27,'2016-11-10','2016-11-15','holllywood twin room
+','good choise');
+INSERT INTO `BookHistory` VALUES (4129955088,99,27,'2016-11-27','2016-11-30','duplex
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (413995633,19,27,'2016-11-9','2016-11-27','cabana
+','just so so');
+INSERT INTO `BookHistory` VALUES (4141953073,95,27,'2016-11-11','2016-11-29','studio room
+','nice one');
+INSERT INTO `BookHistory` VALUES (4159524346,85,27,'2016-11-5','2016-11-5','parlor
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (4168547126,19,27,'2016-11-11','2016-11-23','lanal
+','just so so');
+INSERT INTO `BookHistory` VALUES (4171998911,58,27,'2016-11-6','2016-11-10','efficiency room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (4185833488,43,27,'2016-11-21','2016-11-27','hospitality room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (4194337803,25,27,'2016-11-3','2016-11-10','suite room
+','good choise');
+INSERT INTO `BookHistory` VALUES (420259517,27,28,'2016-11-23','2016-11-27','single room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (4212798247,35,28,'2016-11-21','2016-11-26','double room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (4223572687,17,28,'2016-11-8','2016-11-13','double double room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (4231772809,28,28,'2016-11-1','2016-11-4','twin room
+','the wifi is too slow');
+INSERT INTO `BookHistory` VALUES (424288334,43,28,'2016-11-6','2016-11-6','interconnecting rooms
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (4254390981,51,28,'2016-11-26','2016-11-27','adjoining rooms
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (4265183693,12,28,'2016-11-9','2016-11-9','holllywood twin room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (4271257170,29,28,'2016-11-29','2016-11-29','duplex
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (428299461,77,28,'2016-11-5','2016-11-25','cabana
+','excelent choise');
+INSERT INTO `BookHistory` VALUES (4297776294,93,28,'2016-11-23','2016-11-26','studio room
+','nice one');
+INSERT INTO `BookHistory` VALUES (4309340182,75,28,'2016-11-30','2016-11-30','parlor
+','great');
+INSERT INTO `BookHistory` VALUES (4317511603,31,28,'2016-11-17','2016-11-28','lanal
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (4323146271,63,28,'2016-11-16','2016-11-20','efficiency room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (4336383912,69,28,'2016-11-25','2016-11-30','hospitality room
+','not bad');
+INSERT INTO `BookHistory` VALUES (4346981577,20,28,'2016-11-7','2016-11-26','suite room
+','not bad');
+INSERT INTO `BookHistory` VALUES (4352053590,40,29,'2016-11-14','2016-11-15','single room
+','good');
+INSERT INTO `BookHistory` VALUES (4364090118,10,29,'2016-11-22','2016-11-29','double room
+','A central location, clean room, included fridge, included WiFi and nice breakfast selection');
+INSERT INTO `BookHistory` VALUES (4371029261,19,29,'2016-11-29','2016-11-29','double double room
+','good choise');
+INSERT INTO `BookHistory` VALUES (4381996445,18,29,'2016-11-26','2016-11-29','twin room
+','I will never come here again');
+INSERT INTO `BookHistory` VALUES (4391867349,14,29,'2016-11-20','2016-11-28','interconnecting rooms
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (4401466043,10,29,'2016-11-25','2016-11-25','adjoining rooms
+','good');
+INSERT INTO `BookHistory` VALUES (4411033438,91,29,'2016-11-6','2016-11-25','holllywood twin room
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (4429189914,10,29,'2016-11-2','2016-11-26','duplex
+','great');
+INSERT INTO `BookHistory` VALUES (44310424,49,29,'2016-11-30','2016-11-30','cabana
+',' personable, informative, professional');
+INSERT INTO `BookHistory` VALUES (4444949950,36,29,'2016-11-2','2016-11-18','studio room
+','just so so');
+INSERT INTO `BookHistory` VALUES (4453624528,70,29,'2016-11-21','2016-11-30','parlor
+','just so so');
+INSERT INTO `BookHistory` VALUES (4467042733,16,29,'2016-11-14','2016-11-28','lanal
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (4471610400,6,29,'2016-11-15','2016-11-15','efficiency room
+','The train station to NY is at walkable distance');
+INSERT INTO `BookHistory` VALUES (448617062,7,29,'2016-11-17','2016-11-26','hospitality room
+','good choise');
+INSERT INTO `BookHistory` VALUES (449772012,82,29,'2016-11-16','2016-11-18','suite room
+','The train station to NY is at walkable distance');
