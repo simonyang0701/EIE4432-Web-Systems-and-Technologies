@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script type="text/javascript">
+ function check() 
+ {
+ if (Fname.value=="")
+   {document.getElementById("first").innerHTML="This field is required!";}
+ else 
+ {   if(Fname.value.match(/^[a-zA-Z]{3,10}$/)) 
+    {   document.getElementById("first").innerHTML="";
+    }
+         else 
+        {document.getElementById("first").innerHTML="This field is not valid";}
+        }
+   if (Lname.value=="")
+ {document.getElementById("last").innerHTML="This field is required!";}
+ else 
+ {if(Lname.value.match(/^[a-zA-Z]{3,10}$/)) 
+ {document.getElementById("last").innerHTML="";
+ }
+ else 
+ {document.getElementById("last").innerHTML="This field is not valid";}
+ }   
+ if (TNo.value=="")
+   {document.getElementById("number").innerHTML="This field is required!";}
+ else 
+ {   if(TNo.value.match(/^[1-9][A-Z]-[A-Z][02468]{4}-[1-12]$/)) 
+    {   document.getElementById("number").innerHTML="";
+    }
+         else 
+        {document.getElementById("number").innerHTML="This field is not valid";}
+        }
+}
+ 
+ </script> </head>
+<body>
+<form name="FormA" method="post" action="">
+ <p>
+ <label> First name: </label> <input type="text" id="Fname" />
+ <i><span id="first" span style="color:red"></span></i>
+ </p>
+ 
+ <p>
+ <label> Last name: </label> <input type="text" id="Lname" />
+ <i><span id="last" span style="color:red"></span></i>
+ </p>
+ <p>
+ <label> Tracking number: </label> <input type="text" id="TNo" />
+ <i><span id="number" span style="color:red"></span></i>
+ </p>
+ <input type="button" value="checking" onclick="check()"/>
+</form>
+</body>
+</html> 
